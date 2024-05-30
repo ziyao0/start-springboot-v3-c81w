@@ -59,6 +59,6 @@ public class WebFrameworkApplication {
 
     @GetMapping("/hello")
     public ResponseEntity<String> hello(){
-        return "hello serverless";
+        return new ResponseEntity<>("hello serverless", HttpStatus.OK);
     }
 }
